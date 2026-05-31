@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - BUT Informatique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span>Portfolio BUT 1</span>
+        </div>
+        <nav>
+            <a href="#accueil">À propos & CV</a>
+            <a href="#competences">Compétences</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero-section">
+        
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Bonjour, je m'appelle Gabriel</h1>
+                <p>Actuellement étudiant en <strong>BUT Informatique à l'IUT de Lannion</strong>, je me passionne pour la création d'applications et les technologies du web. Cette première année de formation m'a permis d'acquérir des bases solides en développement, en gestion de bases de données et en gestion de projet à travers diverses Situations d'Apprentissage et d'Évaluation.</p>
+                <p style="margin-top: 15px;">
+                Curieux et rigoureux, je développe une affinité particulière pour le <strong>développement web</strong>. Dans le cadre de mon cursus, je suis à la recherche d'un <strong>stage</strong> afin de mettre mes compétences au service d'une équipe, de relever de nouveaux défis techniques et d'affiner mon projet professionnel vers le métier de développeur web.
+                </p>
+            </div>
+            <div class="hero-photo">
+                <img src="photo.jfif" alt="Photo de profil"> 
+            </div>
+        </div>
+
+        <div class="cv-inline-container">
+            <div class="cv-column">
+                <h3>Formations & Diplômes</h3>
+                <p><strong>2025 - 2026 :</strong> BUT Informatique - IUT de Lannion</p>
+                <p><strong>2025 :</strong> Baccalauréat [Ton Option]</p>
+            </div>
+            <div class="cv-column">
+                <h3>Expériences Professionnelles</h3>
+                <p>Projets académiques (SAE) menés à l'IUT.</p>
+                <p> Décembre 2025 - Agent d'entretien ( mission de 2 semaines )</p>
+            </div>
+        </div>
+        
+        <div class="download-zone">
+            <a href="CV GABRIEL DA SILVA.pdf" class="btn-download" download>Télécharger mon CV (PDF)</a>
+        </div>
+        
+    </section>
+
+    <section class="banner soft-skills">
+        <h2>Mes Soft Skills</h2>
+        <ul class="skills-list">
+            <li>Autonomie</li>
+            <li>Esprit d'équipe et Communication</li>
+            <li>Gestion du temps et Adaptabilité</li>
+        </ul>
+    </section>
+
+    <section id="competences" class="projects-section">
+        <h2>Mes 6 Compétences Informatiques</h2>
+        <p class="subtitle">Découvrez les traces et preuves de mes compétences de première année</p>
+        
+        <div class="projects-grid">
+            <div class="project-card text-only">
+                <h3>1. Réaliser</h3>
+                <p class="desc">Jeu Sokoban (Solo en C)</p>
+                <div class="proof-box">Développement complet de la logique du jeu, manipulation de tableaux bidimensionnels et gestion des conditions de victoire.</div>
+                <a href="sokoban.c" download class="proof-link">📥 Télécharger le code source</a>
+            </div>
+            <div class="project-card text-only">
+                <h3>2. Optimiser</h3>
+                <p class="desc">Automatisation de Sokoban</p>
+                <div class="proof-box">Conception et développement d'un algorithme de résolution autonome du jeu Sokoban</div>
+                <a href="autoo.c" download class="proof-link">📥 Télécharger le code source</a>
+            </div>
+            <div class="project-card text-only">
+                <h3>3. Administrer</h3>
+                <p class="desc">Installation d'un poste pour le développement</p>
+                <div class="proof-box">Linux / Scripts d'automatisation Bash</div>
+            </div>
+            <div class="project-card text-only">
+                <h3>4. Gérer</h3>
+                <p class="desc">Création d'une base de données</p>
+                <div class="proof-box">Modèle Relationnel & Requêtes SQL</div>
+                <a href="create_db_sae104_c25.sql.rel" download class="proof-link">📥 Télécharger le code source</a>
+                <a href="graphes_c25.pdf" download class="proof-link">📥 Télécharger le code source</a>
+            </div>
+            <div class="project-card text-only">
+                <h3>5. Conduire</h3>
+                <p class="desc">Réalisation d'un site Web (Groupe de 4)</p>
+                <div class="proof-box"><strong>Gestion des tâches :</strong> Utilisation d'un tableau Trello pour suivre l'avancement de l'équipe et attribution des rôles.</div>
+                <a href="Vitrine Italie.pdf" download class="proof-link">📥 Télécharger le code source</a>
+            </div>
+            <div class="project-card text-only">
+                <h3>6. Collaborer</h3>
+                <p class="desc">Découverte de l'environnement économique et écologique</p>
+                <div class="proof-box">Présentation et soutenance en équipe devant un jury en respectant les consignes de communication et de gestion du temps de parole.</div>
+                <a href="Oral2_GODEC_DESTRE_DASILVA_GUEYE.pdf" download class="proof-link">📥 Télécharger le code source</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner hard-skills">
+        <h2>Outils & Technologies (Hard Skills)</h2>
+        <ul class="skills-list">
+            <li>HTML / CSS </li>
+            <li>Java / C / SQL</li>
+            <li>Linux </li>
+        </ul>
+    </section>
+
+    <footer id="contact">
+        <h2>Me Contacter</h2>
+        <div class="contact-info">
+            <p>✉ gds29499@gmail.com</p>
+            <p>📞 07 66 60 60 31</p>
+            <p>🔗 LinkedIn / GitHub</p>
+        </div>
+    </footer>
+
+</body>
+</html>

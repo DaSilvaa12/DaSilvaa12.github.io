@@ -1,0 +1,256 @@
+/* Variables de couleurs - Thème Bleu Spatial */
+:root {
+    --bg-space-dark: #0a0f24;    
+    --bg-space-light: #121b3a;   
+    --cosmic-cyan: #00f2fe;      
+    --nebula-purple: #4facfe;    
+    --text-light: #f0f4f8;       
+    --text-muted: #8fa0dd;       
+}
+
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-space-dark);
+    color: var(--text-light);
+    overflow-x: hidden;
+}
+
+/* Styles de la Barre de Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgba(10, 15, 36, 0.95);
+    border-bottom: 1px solid rgba(143, 160, 221, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--cosmic-cyan);
+}
+
+.navbar nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 25px;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: var(--cosmic-cyan);
+}
+
+/* Section Accueil globale */
+.hero-section {
+    padding: 60px 10% 40px 10%;
+}
+
+/* Conteneur principal (Texte d'introduction + Photo) */
+.hero-container {
+    display: flex;
+    justify-content: flex-start; /* Aligne les éléments vers la gauche */
+    align-items: center;
+    gap: 400px;                  /* Crée un espace fixe entre le texte et la photo */
+    margin-bottom: 50px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: var(--cosmic-cyan);
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 650px; /* Légèrement augmenté pour éviter que le texte ne fasse trop de lignes */
+    line-height: 1.6;
+}
+
+.hero-photo img {
+    width: 220px;
+    height: 270px;
+    object-fit: cover;
+    border: 3px solid var(--nebula-purple);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.3);
+}
+
+/* Conteneur du CV intégré sous le à propos */
+.cv-inline-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.cv-column {
+    width: 50%;
+    background-color: var(--bg-space-light);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid var(--nebula-purple);
+}
+
+.cv-column h3 {
+    color: var(--cosmic-cyan);
+    margin-bottom: 15px;
+}
+
+.cv-column p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Titres globaux des sections */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: var(--text-light);
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+/* Bandeaux Skills (Soft & Hard) */
+.banner {
+    background: linear-gradient(135deg, var(--bg-space-light) 0%, #1a264f 100%);
+    border-top: 1px solid rgba(0, 242, 254, 0.2);
+    border-bottom: 1px solid rgba(0, 242, 254, 0.2);
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.banner h2 {
+    margin-top: 0;
+    color: var(--cosmic-cyan);
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skills-list li {
+    background-color: rgba(143, 160, 221, 0.1);
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 242, 254, 0.2);
+    color: var(--text-light);
+    font-size: 1.05rem;
+}
+
+/* Grille des 6 Compétences */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 10% 60px 10%;
+}
+
+.project-card.text-only {
+    background-color: var(--bg-space-light);
+    border: 1px solid rgba(143, 160, 221, 0.1);
+    border-radius: 12px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card.text-only:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 242, 254, 0.15);
+    border-color: var(--cosmic-cyan);
+}
+
+.project-card.text-only h3 {
+    color: var(--text-light);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.project-card.text-only .desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Encadré des traces/preuves */
+.proof-box {
+    background-color: rgba(0, 242, 254, 0.05);
+    border: 1px solid rgba(0, 242, 254, 0.3);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-align: left;
+}
+
+/* Zone Bouton Téléchargement */
+.download-zone {
+    text-align: center;
+}
+
+.btn-download {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--nebula-purple) 0%, var(--cosmic-cyan) 100%);
+    color: var(--bg-space-dark);
+    font-weight: bold;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-download:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--cosmic-cyan);
+}
+
+/* Footer / Contact */
+footer {
+    background-color: #050814;
+    padding: 40px 10%;
+    text-align: center;
+    border-top: 1px solid rgba(143, 160, 221, 0.1);
+}
+
+footer h2 {
+    margin-top: 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    color: var(--text-muted);
+}
